@@ -1,0 +1,6 @@
+<h2><%= @character.name %></h2>
+  <img src='<%=@character.photo_url %>' alt='character' id='char-photo'>
+  <p id='char-quote'>"<%= @character.quote %>"<p>
+  <p id='char-house'>House: <%= @character.house.name %></p>
+  <p id='char-weapon'>Weapon: <%= @character.primary_weapon %></p>
+  <p id='char-status'>Status: <%= @character.status %></p>

@@ -1,0 +1,7 @@
+<h2><%= @house.name %> <h2>
+<h3><%= @house.motto %> <h3>
+<img src='<%=@house.sigil_url %>' alt='sigil' id="sigil-image">
+<img src='<%=@house.seat_url %>' alt='house seat' id="seat-image">
+<% @house.characters.each do |char| %>
+  <%= link_to char.name, char %>
+<% end %>
