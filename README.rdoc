@@ -1,9 +1,35 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Currently adding more to this page, stay tuned...
 
-Things you may want to cover:
+Why don't you check out the planning folder for now?
+
+# MVP Analysis
+
+Bronze:
+- No users, anyone visiting the page has access to all functionality
+- Add houses
+- Add characters
+- Delete houses
+- Delete characters
+- Update houses
+- Update characters
+- Minimal styling
+
+Silver:
+- All of the above, including:
+- One 'master' user that has access to the new/edit/delete functionality
+- Sign-in & sign-out functionality for the master user
+- Read only for all others visiting the page
+- More styling that looks visually appealing
+- Profile page for master user
+ - ability to update master user credentials
+
+Gold:
+- Users, users, users
+- Access to user profiles showing houses created, characters created
+- Nested routes because why not, get some practice with them
+
 
 * Ruby version
 
@@ -22,7 +48,3 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
