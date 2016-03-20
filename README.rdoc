@@ -4,7 +4,7 @@ Currently adding more to this page, stay tuned...
 
 Why don't you check out the planning folder for now?
 
-# MVP Analysis
+== MVP Analysis
 
 Bronze:
 - No users, anyone visiting the page has access to all functionality
@@ -30,6 +30,7 @@ Gold:
 - Access to user profiles showing houses created, characters created
 - Nested routes because why not, get some practice with them
 
+Stuff coming soon:
 
 * Ruby version
 
