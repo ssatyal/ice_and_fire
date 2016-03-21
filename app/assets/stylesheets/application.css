@@ -1,15 +1,38 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any styles
- * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
- * file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+nav {
+  text-align: center;
+}
+
+ #container {
+   display: inline-flex;
+   flex-direction: row;
+   text-align: center;
+ }
+
+#house-link {
+  text-align: center;
+  border: 2px solid green;
+  display: flex;
+  flex-direction: column;
+}
+
+#index-sigil {
+  max-width: 200px;
+  height: auto;
+  border: 2px solid red;
+}
+
+#house-index-container {
+  display: flex;
+  flex-direction: row;
+}
+
+#house-show-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border: 2px solid red;
+}
+
+h2 {
+  border: 2px solid red;
+}

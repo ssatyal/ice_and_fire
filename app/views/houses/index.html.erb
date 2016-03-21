@@ -1,3 +1,8 @@
-<% @houses.each do |house| %>
-  <%= link_to house.name, house %>
-<% end %>
+<div id='house-index-container'>
+  <% @houses.each do |house| %>
+    <div id='house-link'>
+    <%= link_to house.name, house %>
+    <img src='<%= house.sigil_url %>' id='index-sigil'>
+    </div>
+  <% end %>
+</div>
