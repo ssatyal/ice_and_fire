@@ -39,6 +39,19 @@ nav {
   border: 2px solid red;
 }
 
+#edit-house-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border: 2px solid blue;
+  text-align: center;
+}
+
+#house-edit-form {
+  flex-direction: column;
+  padding: 5px;
+}
+
 #sigil-image {
   height: 10%;
   width: 10%;

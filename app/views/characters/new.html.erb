@@ -1,0 +1,27 @@
+<h2>add character</h2>
+
+<%= form_for @character do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+
+  <%= f.label :gender %>
+  <%= f.text_field :gender %>
+
+  <%= f.label :photo_url %>
+  <%= f.text_field :photo_url %>
+
+  <%= f.label :primary_weapon %>
+  <%= f.text_field :primary_weapon %>
+
+  <%= f.label :quote %>
+  <%= f.text_field :quote %>
+
+  <%= f.label :status %>
+  <%= f.text_field :status %>
+
+  <%= f.label :house_id %>
+  <%= f.text_field :house_id %>
+
+  <%= f.submit %>
+
+<% end %>
