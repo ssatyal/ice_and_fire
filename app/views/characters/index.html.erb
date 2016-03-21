@@ -1,0 +1,7 @@
+<div id='char-index-container'>
+  <% @characters.each do |char| %>
+    <div id='char-link'>
+    <%= link_to char.name, char%>
+    </div>
+  <% end %>
+</div>

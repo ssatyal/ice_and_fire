@@ -2,28 +2,32 @@ nav {
   text-align: center;
 }
 
- #container {
-   display: inline-flex;
-   flex-direction: row;
-   text-align: center;
- }
+#container {
+ display: inline-flex;
+ flex-direction: row;
+ text-align: center;
+}
 
 #house-link {
   text-align: center;
   border: 2px solid green;
   display: flex;
   flex-direction: column;
+  width: 200px;
+  height: 300px;
 }
 
 #index-sigil {
-  max-width: 200px;
-  height: auto;
   border: 2px solid red;
+  max-width:100%;
+  max-height:95%;
 }
 
 #house-index-container {
   display: flex;
   flex-direction: row;
+  border: 3px solid red;
+  justify-content: space-around;
 }
 
 #house-show-container {
