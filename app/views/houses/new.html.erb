@@ -1,0 +1,27 @@
+<h2>add a house, yo</h2>
+
+<%= form_for @house do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+
+  <%= f.label :region %>
+  <%= f.text_field :region %>
+
+  <%= f.label :seat_url %>
+  <%= f.text_field :seat_url %>
+
+  <%= f.label "sigil photo URL" %>
+  <%= f.text_field :sigil_url %>
+
+  <%= f.label :motto %>
+  <%= f.text_field :motto %>
+
+  <%= f.label :great_house %>
+  <%= f.text_field :great_house %>
+
+  <%= f.label :allegiance %>
+  <%= f.text_field :allegiance %>
+
+  <%= f.submit %>
+
+<% end %>

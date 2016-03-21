@@ -34,7 +34,19 @@ nav {
   display: flex;
   flex-direction: column;
   text-align: center;
+  justify-content: space-between;
   border: 2px solid red;
+}
+
+#sigil-image {
+  height: 10%;
+  width: 10%;
+  border: 2px solid blue;
+}
+
+#seat-image {
+  height: 25%;
+  width: 25%;
 }
 
 h2 {
