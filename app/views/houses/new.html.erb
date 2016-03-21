@@ -17,7 +17,10 @@
   <%= f.text_field :motto %>
 
   <%= f.label :great_house %>
-  <%= f.text_field :great_house %>
+  <%= f.label :great_house, "Yes", :value => "true"  %>
+  <%= f.radio_button :great_house, true %>
+  <%= f.label :great_house, "No", :value => "false" %>
+  <%= f.radio_button :great_house, false, :checked => true %>
 
   <%= f.label :allegiance %>
   <%= f.text_field :allegiance %>

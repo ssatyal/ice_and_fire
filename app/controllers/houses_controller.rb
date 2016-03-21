@@ -12,7 +12,7 @@ class HousesController < ApplicationController
   end
 
   def create
-    @house = @house.create!(house_params)
+    @house = House.create!(house_params)
     redirect_to @house
   end
 

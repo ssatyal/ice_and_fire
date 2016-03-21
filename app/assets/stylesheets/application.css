@@ -25,6 +25,7 @@ nav {
 
 #house-index-container {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   border: 3px solid red;
   justify-content: space-around;
