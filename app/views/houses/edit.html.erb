@@ -34,8 +34,10 @@
   <div id='house-edit-form'>
     <%= f.submit %>
   </div>
+  <% end %>
+  <%=form_for @house do |f|%>
   <div id='house-edit-form'>
   <%= button_to "Delete", @character, method: :delete, class: "delete" %>
   </div>
+  <% end %>
 </div>
-<% end %>
