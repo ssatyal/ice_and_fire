@@ -1,7 +1,7 @@
 <div id='house-index-container'>
   <% @houses.each do |house| %>
     <div id='house-link'>
-    <%= link_to house.name, house %>
+    <p><%= link_to house.name, house %></p>
     <img src='<%= house.sigil_url %>' id='index-sigil'>
     </div>
   <% end %>

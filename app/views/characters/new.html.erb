@@ -2,35 +2,35 @@
 <div id='edit-char-container'>
   <%= form_for @character do |f| %>
   <div id='char-edit-form'>
-    <%= f.label :name %>
+    <p><%= f.label :name %></p>
     <%= f.text_field :name %>
   </div>
   <div id='char-edit-form'>
-    <%= f.label :gender %>
+    <p><%= f.label :gender %></p>
     <%= f.text_field :gender %>
   </div>
   <div id='char-edit-form'>
-    <%= f.label :photo_url %>
+    <p><%= f.label :photo_url %></p>
     <%= f.text_field :photo_url %>
   </div>
   <div id='char-edit-form'>
-    <%= f.label :primary_weapon %>
+    <p><%= f.label :primary_weapon %></p>
     <%= f.text_field :primary_weapon %>
   </div>
   <div id='char-edit-form'>
-    <%= f.label :quote %>
-    <%= f.text_field :quote %>
+    <p><%= f.label :quote %></p>
+    <%= f.text_area :quote %>
   </div>
   <div id='char-edit-form'>
-    <%= f.label :status %>
+    <p><%= f.label :status %></p>
     <%= f.text_field :status %>
   </div>
   <div id='char-edit-form'>
-    <%= f.label :house_id %>
+    <p><%= f.label :house_id %></p>
     <%= f.collection_select(:house_id, House.all, :id, :name) %>
   </div>
   <div id='char-edit-form'>
-    <%= f.label :username %>
+    <p><%= f.label :username %></p>
     <%= f.collection_select(:user_id, User.all, :id, :username) %>
   </div>
   <div id='char-edit-form'>
