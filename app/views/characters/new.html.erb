@@ -1,27 +1,36 @@
 <h2>add character</h2>
-
-<%= form_for @character do |f| %>
-  <%= f.label :name %>
-  <%= f.text_field :name %>
-
-  <%= f.label :gender %>
-  <%= f.text_field :gender %>
-
-  <%= f.label :photo_url %>
-  <%= f.text_field :photo_url %>
-
-  <%= f.label :primary_weapon %>
-  <%= f.text_field :primary_weapon %>
-
-  <%= f.label :quote %>
-  <%= f.text_field :quote %>
-
-  <%= f.label :status %>
-  <%= f.text_field :status %>
-
-  <%= f.label :house_id %>
-  <%= f.text_field :house_id %>
-
-  <%= f.submit %>
-
-<% end %>
+<div id='edit-char-container'>
+  <%= form_for @character do |f| %>
+  <div id='char-edit-form'>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </div>
+  <div id='char-edit-form'>
+    <%= f.label :gender %>
+    <%= f.text_field :gender %>
+  </div>
+  <div id='char-edit-form'>
+    <%= f.label :photo_url %>
+    <%= f.text_field :photo_url %>
+  </div>
+  <div id='char-edit-form'>
+    <%= f.label :primary_weapon %>
+    <%= f.text_field :primary_weapon %>
+  </div>
+  <div id='char-edit-form'>
+    <%= f.label :quote %>
+    <%= f.text_field :quote %>
+  </div>
+  <div id='char-edit-form'>
+    <%= f.label :status %>
+    <%= f.text_field :status %>
+  </div>
+  <div id='char-edit-form'>
+    <%= f.label :house_id %>
+    <%= f.collection_select(:house_id, House.all, :id, :name) %>
+  </div>
+  <div id='char-edit-form'>
+    <%= f.submit %>
+  </div>
+  <% end %>
+</div>

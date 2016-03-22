@@ -52,6 +52,19 @@ nav {
   padding: 5px;
 }
 
+#edit-char-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border: 2px solid blue;
+  text-align: center;
+}
+
+#char-edit-form {
+  flex-direction: column;
+  padding: 5px;
+}
+
 #sigil-image {
   height: 10%;
   width: 10%;
@@ -65,4 +78,5 @@ nav {
 
 h2 {
   border: 2px solid red;
+  text-align: center;
 }

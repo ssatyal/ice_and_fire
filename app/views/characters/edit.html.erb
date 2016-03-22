@@ -1,0 +1,39 @@
+<h2>edit character</h2>
+<div id='edit-char-container'>
+  <%= form_for @character do |f| %>
+  <div id='char-edit-form'>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </div>
+  <div id='char-edit-form'>
+    <%= f.label :gender %>
+    <%= f.text_field :gender %>
+  </div>
+  <div id='char-edit-form'>
+    <%= f.label :photo_url %>
+    <%= f.text_field :photo_url %>
+  </div>
+  <div id='char-edit-form'>
+    <%= f.label :primary_weapon %>
+    <%= f.text_field :primary_weapon %>
+  </div>
+  <div id='char-edit-form'>
+    <%= f.label :quote %>
+    <%= f.text_field :quote %>
+  </div>
+  <div id='char-edit-form'>
+    <%= f.label :status %>
+    <%= f.text_field :status %>
+  </div>
+  <div id='char-edit-form'>
+    <%= f.label :house_id %>
+    <%= f.collection_select(:house_id, House.all, :id, :name) %>
+  </div>
+  <div id='char-edit-form'>
+    <%= f.submit %>
+  </div>
+  <div id='char-edit-form'>
+    <%= button_to "Delete", @character, method: :delete, class: "delete" %>
+  </div>
+  <% end %>
+</div>

@@ -1,5 +1,6 @@
 <div id='house-show-container'>
   <h2><%= @house.name %> </h2>
+  <%= link_to "Edit House #{@house.name}", edit_house_path %>
   <h3><%= @house.motto %> </h3>
   <img src='<%=@house.sigil_url %>' alt='sigil' id='sigil-image'>
   <img src='<%=@house.seat_url %>' alt='house seat' id='seat-image'>

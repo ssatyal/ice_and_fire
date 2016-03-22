@@ -4,3 +4,4 @@
   <p id='char-house'>House: <%= @character.house.name %></p>
   <p id='char-weapon'>Weapon: <%= @character.primary_weapon %></p>
   <p id='char-status'>Status: <%= @character.status %></p>
+  <%= link_to "Edit #{@character.name}", edit_character_path %>

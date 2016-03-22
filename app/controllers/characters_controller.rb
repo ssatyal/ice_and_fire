@@ -17,8 +17,25 @@ class CharactersController < ApplicationController
     redirect_to @character
   end
 
+  def edit
+    @character = Character.find(params[:id])
+  end
+
+  def update
+    @character = Character.find(params[:id])
+    @character.update(character_params)
+    redirect_to @character
+  end
+
+  def destroy
+    @character = Character.find(params[:id])
+    @character.destroy
+
+    redirect_to characters_url
+  end
+
   private
   def character_params
-    require(:character).permit(:name, :gender, :photo_url, :primary_weapon, :quote, :status, :house_id)
+    params.require(:character).permit(:name, :gender, :photo_url, :primary_weapon, :quote, :status, :house_id)
   end
 end
