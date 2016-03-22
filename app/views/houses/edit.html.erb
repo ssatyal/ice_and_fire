@@ -31,6 +31,10 @@
     <%= f.label :allegiance %>
     <%= f.text_field :allegiance %>
   </div>
+  <div id="house-edit-form">
+    <%= f.label :username %>
+    <%= f.collection_select(:user_id, User.all, :id, :username) %>
+  </div>
   <div id='house-edit-form'>
     <%= f.submit %>
   </div>

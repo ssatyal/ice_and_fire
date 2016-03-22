@@ -1,7 +1,9 @@
 House.destroy_all
 Character.destroy_all
 
-stark = House.create!(name:"Stark", region:"The North", seat:"Winterfell", seat_url:"http://i.imgur.com/T2lK7vo.jpg", sigil_url:"http://i.imgur.com/JUoTVDa.png",
+admin = User.create!(username:"Admin",password:"password",email:"google.com")
+
+stark = admin.houses.create!(name:"Stark", region:"The North", seat:"Winterfell", seat_url:"http://i.imgur.com/T2lK7vo.jpg", sigil_url:"http://i.imgur.com/JUoTVDa.png",
 motto:"Winter is Coming", great_house:true, allegiance:"Iron Throne")
 
 ned = stark.characters.create!(name:"Ned Stark", gender:"Male", photo_url:"http://i.imgur.com/MzotDZQ.jpg", primary_weapon:"Sword: \"Ice\"",quote:"Bran: Can a man still be brave if he’s afraid?
@@ -15,7 +17,7 @@ cat = stark.characters.create!(name:"Catelyn Stark", gender:"Female", photo_url:
 
 arya = stark.characters.create!(name:"Arya Stark", gender:"Female", photo_url:"http://i.imgur.com/lQW0ZjV.jpg", primary_weapon:"Sword: \"Needle\"",quote:"I'm the ghost in Harrenhal, she thought. And that night, there was one less name to hate.",status:"No One")
 
-lannister = House.create!(name:"Lannister", region:"Westerlands", seat:"Casterly Rock", seat_url:"http://i.imgur.com/KeJxxzEm.jpg", sigil_url:"http://i.imgur.com/uxowZrn.png",
+lannister = admin.houses.create!(name:"Lannister", region:"Westerlands", seat:"Casterly Rock", seat_url:"http://i.imgur.com/KeJxxzEm.jpg", sigil_url:"http://i.imgur.com/uxowZrn.png",
 motto:"Hear Me Roar!", great_house:true, allegiance:"Iron Throne")
 
 tyrion = lannister.characters.create!(name:"Tyrion Lannister", gender:"Male", photo_url:"http://i.imgur.com/quBLExVm.jpg", primary_weapon:"n/a",quote:"My mind is my weapon. My brother has his sword, King Robert has his warhammer and I have my mind... and a mind needs books as a sword needs a whetstone if it is to keep its edge. That’s why I read so much, Jon Snow.",status:"alive, missing from Westeros")

@@ -1,0 +1,20 @@
+<h2>Edit Your Profile</h2>
+<%= form_for @user do |f| %>
+<div id='user-wrapper'>
+  <div id="user-el">
+    <%= f.label :username %>
+    <%= f.text_field :username %>
+  </div>
+  <div id="user-el">
+    <%= f.label :password %>
+    <%= f.password_field :password %>
+  </div>
+  <div id="user-el">
+    <%= f.label :password %>
+    <%= f.password_field :password %>
+  </div>
+  <div id="user-el">
+    <%= f.submit "Submit" %>
+  </div>
+  <% end %>
+</div>

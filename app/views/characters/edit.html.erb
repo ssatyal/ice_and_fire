@@ -30,6 +30,10 @@
     <%= f.collection_select(:house_id, House.all, :id, :name) %>
   </div>
   <div id='char-edit-form'>
+    <%= f.label :username %>
+    <%= f.collection_select(:user_id, User.all, :id, :username) %>
+  </div>
+  <div id='char-edit-form'>
     <%= f.submit %>
   </div>
   <% end %>

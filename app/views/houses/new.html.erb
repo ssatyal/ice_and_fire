@@ -1,40 +1,43 @@
 <h2>add a house, yo</h2>
 <div id="edit-house-container">
-<%= form_for @house do |f| %>
-<div id="house-edit-form">
-  <%= f.label :name %>
-  <%= f.text_field :name %>
-</div>
-<div id="house-edit-form">
-  <%= f.label :region %>
-  <%= f.text_field :region %>
-</div>
-<div id="house-edit-form">
-  <%= f.label :seat_url %>
-  <%= f.text_field :seat_url %>
-</div>
-<div id="house-edit-form">
-  <%= f.label "sigil photo URL" %>
-  <%= f.text_field :sigil_url %>
-</div>
-<div id="house-edit-form">
-  <%= f.label :motto %>
-  <%= f.text_field :motto %>
-</div>
-<div id="house-edit-form">
-  <%= f.label :great_house %>
-  <%= f.label :great_house, "Yes", :value => "true"  %>
-  <%= f.radio_button :great_house, true %>
-  <%= f.label :great_house, "No", :value => "false" %>
-  <%= f.radio_button :great_house, false, :checked => true %>
-</div>
-<div id="house-edit-form">
-  <%= f.label :allegiance %>
-  <%= f.text_field :allegiance %>
-</div>
-<div id="house-edit-form">
-  <%= f.submit %>
-</div>
-
-<% end %>
+  <%= form_for @house do |f| %>
+  <div id="house-edit-form">
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </div>
+  <div id="house-edit-form">
+    <%= f.label :region %>
+    <%= f.text_field :region %>
+  </div>
+  <div id="house-edit-form">
+    <%= f.label :seat_url %>
+    <%= f.text_field :seat_url %>
+  </div>
+  <div id="house-edit-form">
+    <%= f.label "sigil photo URL" %>
+    <%= f.text_field :sigil_url %>
+  </div>
+  <div id="house-edit-form">
+    <%= f.label :motto %>
+    <%= f.text_field :motto %>
+  </div>
+  <div id="house-edit-form">
+    <%= f.label :great_house %>
+    <%= f.label :great_house, "Yes", :value => "true"  %>
+    <%= f.radio_button :great_house, true %>
+    <%= f.label :great_house, "No", :value => "false" %>
+    <%= f.radio_button :great_house, false, :checked => true %>
+  </div>
+  <div id="house-edit-form">
+    <%= f.label :allegiance %>
+    <%= f.text_field :allegiance %>
+  </div>
+  <div id="house-edit-form">
+    <%= f.label :username %>
+    <%= f.collection_select(:user_id, User.all, :id, :username) %>
+  </div>
+  <div id="house-edit-form">
+    <%= f.submit %>
+  </div>
+  <% end %>
 </div>
