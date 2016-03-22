@@ -1,5 +1,23 @@
+h1 {
+  font-family: 'MedievalSharp';
+}
+body {
+  background-color: #d3d3d3;
+  font-family: 'MedievalSharp';
+}
 nav {
   text-align: center;
+}
+
+a:visited{
+  color: blue;
+  style: none;
+  text-decoration: none;
+}
+
+a {
+  style: none;
+  text-decoration: none;
 }
 
 #container {
