@@ -18,8 +18,12 @@
       <li><%= link_to 'Characters', characters_path %></li>
       <li><%= link_to 'Add House', new_house_path %></li>
       <li><%= link_to 'Add Character', new_character_path %></li>
-      <li><%= link_to "Sign Up", new_user_path %></li>
-      <li><%= link_to "Users", users_path %></li>
+        <% if !current_user %>
+      <li><%= link_to "Sign Up", new_user_registration_path %></li>
+      <li><%= link_to "Sign In", new_user_session_path %></li>
+        <% else %>
+      <li><%=link_to "Sign Out #{current_user.email}", destroy_user_session_path, method: :delete%></li>
+        <% end %>
     </ul>
   </nav>
   </div>
