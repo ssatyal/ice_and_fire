@@ -1,3 +1,5 @@
+#how to pass user into character via chaining?
+
 House.destroy_all
 Character.destroy_all
 User.destroy_all
@@ -38,3 +40,6 @@ motto:"Ours is the Fury", great_house: true, allegiance:"Iron Throne")
 tom = bar.characters.create!(name:"Tommen Baratheon", gender:"Male", photo_url:"http://i.imgur.com/2tYyHyI.jpg", primary_weapon:"n/a",quote:"When I'm king in my own right, I'm going to outlaw beets.",status:"King of the Andals and the First Men, Lord of the Seven Kingdoms, and Protector of the Realm")
 
 joff = bar.characters.create!(name:"Joffrey Baratheon", gender:"Male", photo_url:"http://i.imgur.com/pw5DqjH.jpg", primary_weapon:"Crossbow",quote:"A strong king acts boldly, he doesn't just talk.",status:"deceased, poison")
+
+grey = admin.houses.create!(name:"Greyjoy", region:"Iron Islands", seat:"Pyke", seat_url:"http://i.imgur.com/tN2C8lZ.jpg", sigil_url:"http://i.imgur.com/be67Ubu.png",
+motto:"We Do Not Sow", great_house: true, allegiance:"Iron Throne")
