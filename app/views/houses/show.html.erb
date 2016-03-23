@@ -1,4 +1,4 @@
-<div id='house-show-container'>
+<div class='house-show-container'>
   <div class='house-show'>
     <h2><%= @house.name %> </h2>
   </div>
@@ -13,7 +13,7 @@
   </div>
   <div class='house-show'>
     <p>Seat: <%=@house.seat%></p>
-    <img src='<%=@house.seat_url %>' alt='house seat' id='seat-image'>
+    <img src='<%=@house.seat_url %>' alt='house seat' class='seat-image'>
   </div>
   <p>House Members</p>
     <% @house.characters.each do |char| %>

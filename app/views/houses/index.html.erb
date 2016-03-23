@@ -1,9 +1,9 @@
 <h2>Houses</h2>
-<div id='house-index-container'>
+<div class='house-index-container'>
   <% @houses.each do |house| %>
-    <div id='house-link'>
+    <div class='house-link'>
     <p><%= link_to house.name, house %></p>
-    <img src='<%= house.sigil_url %>' id='index-sigil'>
+    <img src='<%= house.sigil_url %>' class='index-sigil' alt='sigil'>
     </div>
   <% end %>
 </div>

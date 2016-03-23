@@ -1,39 +1,39 @@
 <h2>add character</h2>
-<div id='edit-char-container'>
+<div class='edit-char-container'>
   <%= form_for @character do |f| %>
-  <div id='char-edit-form'>
+  <div class='char-edit-form'>
     <p><%= f.label :name %></p>
     <%= f.text_field :name %>
   </div>
-  <div id='char-edit-form'>
+  <div class='char-edit-form'>
     <p><%= f.label :gender %></p>
     <%= f.text_field :gender %>
   </div>
-  <div id='char-edit-form'>
+  <div class='char-edit-form'>
     <p><%= f.label :photo_url %></p>
     <%= f.text_field :photo_url %>
   </div>
-  <div id='char-edit-form'>
+  <div class='char-edit-form'>
     <p><%= f.label :primary_weapon %></p>
     <%= f.text_field :primary_weapon %>
   </div>
-  <div id='char-edit-form'>
+  <div class='char-edit-form'>
     <p><%= f.label :quote %></p>
     <%= f.text_area :quote %>
   </div>
-  <div id='char-edit-form'>
+  <div class='char-edit-form'>
     <p><%= f.label :status %></p>
     <%= f.text_field :status %>
   </div>
-  <div id='char-edit-form'>
+  <div class='char-edit-form'>
     <p><%= f.label :house_id %></p>
     <%= f.collection_select(:house_id, House.all, :id, :name) %>
   </div>
-  <div id='char-edit-form'>
+  <div class='char-edit-form'>
     <p><%= f.label :username %></p>
     <%= f.collection_select(:user_id, User.all, :id, :username) %>
   </div>
-  <div id='char-edit-form'>
+  <div class='char-edit-form'>
     <%= f.submit %>
   </div>
   <% end %>

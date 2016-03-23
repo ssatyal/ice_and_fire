@@ -11,7 +11,15 @@ nav {
 }
 
 ul {
-  display: inline-block;
+  list-style-type: none;
+}
+
+li {
+  display: inline;
+  background-color: rgba(255,255,255,0.4);
+  margin: 5px;
+  padding: 2px;
+
 }
 
 a:visited{
@@ -25,13 +33,7 @@ a {
   text-decoration: none;
 }
 
-#container {
- display: inline-flex;
- flex-direction: row;
- text-align: center;
-}
-
-#house-link {
+.house-link {
   text-align: center;
   border: 2px solid green;
   flex-direction: column;
@@ -39,20 +41,20 @@ a {
   height: 300px;
 }
 
-#index-sigil {
+.index-sigil {
   border: 2px solid red;
   max-height: 210px;
-  max-width: 210px;
+  max-width: 190px;
 }
 
-#house-index-container {
+.house-index-container {
   display: flex;
   flex-flow: row wrap;
   border: 3px solid red;
   justify-content: space-around;
 }
 
-#house-show-container {
+.house-show-container {
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -60,7 +62,7 @@ a {
   border: 2px solid red;
 }
 
-#edit-house-container {
+.edit-house-container {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -68,12 +70,12 @@ a {
   text-align: center;
 }
 
-#house-edit-form {
+.house-edit-form {
   flex-direction: column;
   padding: 5px;
 }
 
-#edit-char-container {
+.edit-char-container {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -81,7 +83,7 @@ a {
   text-align: center;
 }
 
-#char-edit-form {
+.char-edit-form {
   flex-direction: column;
   padding: 5px;
 }
@@ -90,7 +92,7 @@ a {
   height:200px;
 }
 
-#seat-image {
+.seat-image {
   max-height: 200px;
   /*width: 25%;*/
 }
@@ -130,12 +132,12 @@ h2 {
 }
 
 
-#char-photo {
+.char-photo {
   max-width: 200px;
   max-height: 300px;
 }
 
-#char-show {
+.char-show {
   width: 300px;
   padding: 5px;
   border: 2px solid green;

@@ -1,48 +1,48 @@
 <h2>Edit House <%=@house.name %>, yo</h2>
-<div id="edit-house-container">
+<div class="edit-house-container">
   <%= form_for @house do |f| %>
-  <div id='house-edit-form'>
+  <div class='house-edit-form'>
     <p><%= f.label :name %></p>
     <%= f.text_field :name %>
   </div>
-  <div id='house-edit-form'>
+  <div class='house-edit-form'>
     <p><%= f.label :region %></p>
     <%= f.text_field :region %>
   </div>
-  <div id='house-edit-form'>
+  <div class='house-edit-form'>
     <p><%= f.label :seat_url %></p>
     <%= f.text_field :seat_url %>
   </div>
-  <div id='house-edit-form'>
+  <div class='house-edit-form'>
     <p><%= f.label "sigil photo URL" %></p>
     <%= f.text_field :sigil_url %>
   </div>
-  <div id='house-edit-form'>
+  <div class='house-edit-form'>
     <p><%= f.label :motto %></p>
     <%= f.text_field :motto %>
   </div>
-  <div id='house-edit-form'>
+  <div class='house-edit-form'>
     <p><%= f.label "Great House"%></p>
     <%= f.radio_button(:great_house, true) %>
     <%= label_tag(:great_house, "Yes") %>
     <%= f.radio_button(:great_house, false) %>
     <%= label_tag(:great_house, "No") %>
   </div>
-  <div id='house-edit-form'>
+  <div class='house-edit-form'>
     <p><%= f.label :allegiance %></p>
     <%= f.text_field :allegiance %>
   </div>
-  <div id="house-edit-form">
+  <div class='house-edit-form'>
     <p><%= f.label :username %></p>
     <%= f.collection_select(:user_id, User.all, :id, :username) %>
   </div>
-  <div id='house-edit-form'>
+  <div class='house-edit-form'>
     <p><%= f.submit %></p>
   </div>
   <% end %>
   <p class='delete-house'>caution: deleting houses is dangerous</p>
   <%=form_for @house do |f|%>
-  <div id='house-edit-form'>
+  <div class='house-edit-form'>
   <%= button_to "Delete House", @character, method: :delete, class: "delete" %>
   </div>
   <% end %>

@@ -1,18 +1,18 @@
 <h2><%= @character.name %></h2>
 <div class='char-show-wrapper'>
-  <div id='char-show'>
-    <img src='<%=@character.photo_url %>' alt='character' id='char-photo'>
+  <div class='char-show'>
+    <img src='<%=@character.photo_url %>' alt='character' class='char-photo'>
   </div>
-  <div id='char-show' class='quote'>
+  <div class='char-show' class='quote'>
     "<%= @character.quote %>"
   </div>
-  <div id='char-show'>
+  <div class='char-show'>
     House: <%= @character.house.name %>
   </div>
-  <div id='char-show'>
+  <div class='char-show'>
     Weapon: <%= @character.primary_weapon %>
   </div>
-  <div id='char-show'>
+  <div class='char-show'>
     Status: <%= @character.status %>
   </div>
   <%= link_to "Edit #{@character.name}", edit_character_path %>
