@@ -7,8 +7,7 @@ body {
 }
 nav {
   text-align: center;
-  /*position: absolute;
-  top: 10px;*/
+  border: 2px solid red;
 }
 
 ul {
@@ -48,8 +47,7 @@ a {
 
 #house-index-container {
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
+  flex-flow: row wrap;
   border: 3px solid red;
   justify-content: space-around;
 }
@@ -122,4 +120,36 @@ h2 {
 
 .user-wrapper {
   text-align: center;
+}
+
+.char-show-wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+#char-photo {
+  max-width: 200px;
+  max-height: 300px;
+}
+
+#char-show {
+  width: 300px;
+  padding: 5px;
+  border: 2px solid green;
+}
+
+.quote {
+  font-style: italic;
+}
+
+.users-list {
+  text-align: center;
+}
+
+h2 {
+  background-color: #3b3b3b;
+  color: white;
 }
