@@ -20,7 +20,6 @@ class HousesController < ApplicationController
 
   def edit
     redirect_to root_path unless current_user
-    redirect_to root_path unless current_user
     @house = House.find(params[:id])
   end
 

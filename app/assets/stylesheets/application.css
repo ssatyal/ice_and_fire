@@ -4,44 +4,68 @@ h1 {
 body {
   background-color: #d3d3d3;
   font-family: 'MedievalSharp';
+  margin: 0 auto;
+  background-color: #000;
+  color: white;
+}
+
+.h1-div {
+  text-align: center;
+  margin: 0 auto;
+  width: 300px;
+  background-color: rgba(0,0,0,.4);
+  border-radius: 25px;
+}
+.header {
+  background-image: url('http://i.imgur.com/tP9XT2h.jpg');
+  width: 100%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background-size: cover;
 }
 nav {
   text-align: center;
-  border: 2px solid red;
+  color: white;
+  background-color: #3b3b3b;
 }
 
 ul {
   list-style-type: none;
+  margin: 0;
 }
 
 li {
   display: inline;
-  background-color: rgba(255,255,255,0.4);
-  margin: 5px;
-  padding: 2px;
+  /*background-color: rgba(255,255,255,0.4);*/
 }
 
 a:visited{
-  color: blue;
+  color: white;
   style: none;
   text-decoration: none;
 }
 
 a {
+  color: white;
   style: none;
   text-decoration: none;
 }
 
+a:hover {
+  color: red;
+}
+
 .house-link {
   text-align: center;
-  border: 2px solid green;
   flex-direction: column;
   width: 200px;
   height: 300px;
 }
 
 .index-sigil {
-  border: 2px solid red;
   max-height: 210px;
   max-width: 190px;
 }
@@ -49,7 +73,6 @@ a {
 .house-index-container {
   display: flex;
   flex-flow: row wrap;
-  border: 3px solid red;
   justify-content: space-around;
 }
 
@@ -58,14 +81,12 @@ a {
   flex-direction: column;
   text-align: center;
   justify-content: space-between;
-  border: 2px solid red;
 }
 
 .edit-house-container {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  border: 2px solid blue;
   text-align: center;
 }
 
@@ -78,7 +99,6 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  border: 2px solid blue;
   text-align: center;
 }
 
@@ -93,13 +113,7 @@ a {
 
 .seat-image {
   max-height: 200px;
-  border: 2px solid black;
-  /*width: 25%;*/
-}
-
-h2 {
-  border: 2px solid red;
-  text-align: center;
+  border: 2px solid white;
 }
 
 .delete-house {
@@ -135,13 +149,12 @@ h2 {
 .char-photo {
   max-width: 200px;
   max-height: 300px;
-  border: 2px solid black;
+  border: 2px solid white;
 }
 
 .char-show {
   width: 300px;
   padding: 5px;
-  border: 2px solid green;
 }
 
 .quote {
@@ -155,6 +168,9 @@ h2 {
 h2 {
   background-color: #3b3b3b;
   color: white;
+  text-align: center;
+  margin: 0;
+  padding: 5px;
 }
 
 .alert {
@@ -163,4 +179,24 @@ h2 {
 
 .notice {
   color:green;
+}
+
+#ice {
+  color: #00CAC2;
+}
+
+#fire {
+  color: #F22100;
+}
+
+.list-wrapper {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+}
+
+.list-div {
+  display: inline;
+  padding: 5px;
 }

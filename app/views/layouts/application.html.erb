@@ -10,25 +10,29 @@
 <body>
   <p class="notice"><%= notice %></p>
   <p class="alert"><%= alert %></p>
-  <div class='header'>
   <nav>
-    <h1>song of ice and fire wiki</h1>
+    <div class="header">
+      <div class='h1-div'>
+        <h1>song of <span id='ice'>ice</span> and <span id='fire'>fire</span> wiki</h1>
+      </div>
+    </div>
     <ul>
-      <li><%= link_to 'Houses', houses_path %></li>
-      <li><%= link_to 'Characters', characters_path %></li>
+      <div class='list-wrapper'>
+        <div class="list-div"><li><%= link_to 'Houses', houses_path %></li></div>
+        <div class="list-div"><li><%= link_to 'Characters', characters_path %></li></div>
         <% if !current_user %>
-      <li><%= link_to "Sign Up", new_user_registration_path %></li>
-      <li><%= link_to "Sign In", new_user_session_path %></li>
+        <div class="list-div"><li><%= link_to "Sign Up", new_user_registration_path %></li></div>
+        <div class="list-div"><li><%= link_to "Sign In", new_user_session_path %></li></div>
         <% else %>
-      <li><%= link_to 'Add House', new_house_path %></li>
-      <li><%= link_to 'Add Character', new_character_path %></li>
-      <li><%=link_to "Sign Out #{current_user.email}", destroy_user_session_path, method: :delete%></li>
+        <div class="list-div"><li><%= link_to 'Add House', new_house_path %></li></div>
+        <div class="list-div"><li><%= link_to 'Add Character', new_character_path %></li></div>
+        <div class="list-div"><li><%=link_to "Sign Out #{current_user.email}", destroy_user_session_path, method: :delete%></li></div>
         <% end %>
+      </div>
     </ul>
   </nav>
-  </div>
 
-  <%= yield %>
+<%= yield %>
 
 </body>
 </html>
