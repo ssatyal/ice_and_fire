@@ -10,6 +10,10 @@
     <%= f.text_field :region %>
   </div>
   <div class='house-edit-form'>
+    <p><%= f.label :seat %></p>
+    <%= f.text_field :seat %>
+  </div>
+  <div class='house-edit-form'>
     <p><%= f.label :seat_url %></p>
     <%= f.text_field :seat_url %>
   </div>
@@ -32,7 +36,6 @@
     <p><%= f.label :allegiance %></p>
     <%= f.text_field :allegiance %>
   </div>
-
   <div class='house-edit-form'>
     <%= f.submit %>
   </div>

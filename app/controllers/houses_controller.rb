@@ -8,25 +8,31 @@ class HousesController < ApplicationController
   end
 
   def new
+    redirect_to root_path unless current_user
     @house = House.new
   end
 
   def create
-    @house = House.create!(house_params)
+    redirect_to root_path unless current_user
+    @house = House.create!(house_params.merge(user: current_user))
     redirect_to @house
   end
 
   def edit
+    redirect_to root_path unless current_user
+    redirect_to root_path unless current_user
     @house = House.find(params[:id])
   end
 
   def update
+    redirect_to root_path unless current_user
     @house = House.find(params[:id])
-    @house.update(house_params)
+    @house.update(house_params.merge(user: current_user))
     redirect_to @house
   end
 
   def destroy
+    redirect_to root_path unless current_user
     @house = House.find(params[:id])
     @house.destroy
 

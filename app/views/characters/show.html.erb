@@ -15,5 +15,14 @@
   <div class='char-show'>
     Status: <%= @character.status %>
   </div>
-  <%= link_to "Edit #{@character.name}", edit_character_path %>
-</div>
+  <div class='char-show'>
+    <p>Updated By: <%if @character.user == nil%>
+      <%= "SEED"%>
+      <% else %>
+      <%=@character.user.email%>
+      <% end%></p>
+    </div>
+    <% if current_user %>
+      <%=link_to "Edit #{@character.name}", edit_character_path %>
+      <% end %>
+  </div>

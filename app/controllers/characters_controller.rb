@@ -8,26 +8,31 @@ class CharactersController < ApplicationController
   end
 
   def new
+    redirect_to root_path unless current_user
     @character = Character.new
     @houses = House.all
   end
 
   def create
-    @character = Character.create!(character_params)
+    redirect_to root_path unless current_user
+    @character = Character.create!(character_params.merge(user: current_user))
     redirect_to @character
   end
 
   def edit
+    redirect_to root_path unless current_user
     @character = Character.find(params[:id])
   end
 
   def update
+    redirect_to root_path unless current_user
     @character = Character.find(params[:id])
-    @character.update(character_params)
+    @character.update(character_params.merge(user: current_user))
     redirect_to @character
   end
 
   def destroy
+    redirect_to root_path unless current_user
     @character = Character.find(params[:id])
     @character.destroy
 

@@ -3,7 +3,9 @@
     <h2><%= @house.name %> </h2>
   </div>
   <div class='house-show'>
+    <% if current_user %>
     <%= link_to "Edit House #{@house.name}", edit_house_path %>
+    <% end %>
   </div>
   <div class='house-show'>
     <h3><%= @house.motto %> </h3>
@@ -15,7 +17,17 @@
     <p>Seat: <%=@house.seat%></p>
     <img src='<%=@house.seat_url %>' alt='house seat' class='seat-image'>
   </div>
-  <p>House Members</p>
+  <div class='house-show'>
+    <p>Region: <%=@house.region%></p>
+  </div>
+  <div class='house-show'>
+    <p>Updated By: <%if @house.user == nil%>
+      <%= "SEED"%>
+      <% else %>
+      <%=@house.user.email%>
+      <% end%></p>
+  </div>
+  <h3>House Members</h3>
     <% @house.characters.each do |char| %>
     <div class='house-show'>
     <%= link_to char.name, char %>

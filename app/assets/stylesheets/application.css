@@ -19,7 +19,6 @@ li {
   background-color: rgba(255,255,255,0.4);
   margin: 5px;
   padding: 2px;
-
 }
 
 a:visited{
@@ -94,6 +93,7 @@ a {
 
 .seat-image {
   max-height: 200px;
+  border: 2px solid black;
   /*width: 25%;*/
 }
 
@@ -135,6 +135,7 @@ h2 {
 .char-photo {
   max-width: 200px;
   max-height: 300px;
+  border: 2px solid black;
 }
 
 .char-show {
@@ -154,4 +155,12 @@ h2 {
 h2 {
   background-color: #3b3b3b;
   color: white;
+}
+
+.alert {
+  color: red;
+}
+
+.notice {
+  color:green;
 }

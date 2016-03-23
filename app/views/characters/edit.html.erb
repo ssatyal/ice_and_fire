@@ -29,10 +29,7 @@
     <p><%= f.label :house_id %></p>
     <%= f.collection_select(:house_id, House.all, :id, :name) %>
   </div>
-  <div class='char-edit-form'>
-    <p><%= f.label :username %></p>
-    <%= f.collection_select(:user_id, User.all, :id, :username) %>
-  </div>
+
   <div class='char-edit-form'>
     <%= f.submit %>
   </div>
