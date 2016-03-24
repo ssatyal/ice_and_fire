@@ -1,8 +1,13 @@
 == README
 
-Currently adding more to this page, stay tuned...
+== Technologies Used
 
-Why don't you check out the planning folder for now?
+- Ruby
+- Rails
+- HTML
+- CSS
+- Heroku
+- Devise gem for users/encrypted password
 
 == MVP Analysis
 
@@ -30,22 +35,12 @@ Gold:
 - Access to user profiles showing houses created, characters created
 - Nested routes because why not, get some practice with them
 
-Stuff coming soon:
 
-* Ruby version
+== Unsolved Issues
+- Forgotten password does not work
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+== Approach
+- Started small, two models: Houses and Characters (one to many)
+- Implemented CRUD abilities one at the time
+- Once I was happy with CRUD functionality, moved on to adding users with devise
+- Finally, worked on the CSS styling
